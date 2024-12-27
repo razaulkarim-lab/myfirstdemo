@@ -1,0 +1,92 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #a884847c;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Report Page styling */
+.report-page {
+    width: 100%;
+    max-width: 1200px;
+    background-color: rgba(196, 99, 99, 0.815);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(207, 103, 103, 0.2);
+}
+
+header h1 {
+    font-size: 24px;
+    color: #14e09293;
+}
+
+header p {
+    color: #8282838e;
+}
+
+/* Filters section */
+.filters {
+    margin: 20px 0;
+    display: flex;
+    gap: 10px;
+}
+
+.filters label {
+    margin-right: 5px;
+}
+
+.filters input {
+    padding: 5px;
+}
+
+/* Summary section */
+.summary {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.summary-item {
+    flex: 1;
+    background-color: #242a758e;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.summary-item h3 {
+    margin-bottom: 10px;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: rgb(126, 120, 120);
+    box-shadow: 0 0 10px rgba(31, 30, 30, 0.1);
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}

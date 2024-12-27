@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sub-Admin Panel</title>
+  <link rel="stylesheet" href="sub-admin.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+  <header>
+    <h1>Welcome to Telecom Services</h1>
+    <nav>
+        <a href="signup.html">Registration Now</a>
+        <a href="login.html">Login Now</a>
+      <a href="index.html">Home</a>
+      <a href="admin-panel.html">admin-panel</a>
+      <a href="retailer.html"><a href="retailar login.html">Retailer</a></a>
+      
+      <a href="plans.html">Plans</a>
+      <a href="contact.html">Contact</a>
+      <a href="Logout.html">Logout </a>
+    </nav>
+  </header>
+  
+  <section id="intro">
+    <h2>Affordable and Reliable Telecom Solutions</h2>
+    <p>We provide the best telecom services with a range of plans to suit everyone’s needs.</p>
+  </section>
+
+
+
+
+  <div class="admin-panel">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>Sub-Admin Panel</h2>
+      <nav>
+        <ul>
+          <li><a href="#dashboard">Dashboard</a></li>
+          <li><a href="retailer.html">Manage Users</a></li>
+          <li><a href="report.html">Reports</a></li>
+          <li><a href="setting.html">Settings</a></li>
+          <li><a href="retailer.html">Support</a></li>
+          <li><a href="Logout.html">Logout</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="content">
+      <header>
+        <h1>Welcome, Sub-Admin</h1>
+        <p>Manage your dashboard and user controls below.</p>
+      </header>
+
+      <section id="dashboard" class="section">
+        <h2>Dashboard</h2>
+        <div class="cards">
+          <div class="card">
+            <h3>New Users</h3>
+            <p>123</p>
+          </div>
+          <div class="card">
+            <h3>Pending Requests</h3>
+            <p>45</p>
+          </div>
+          <div class="card">
+            <h3>Issues Reported</h3>
+            <p>8</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="manage-users" class="section">
+        <h2>Manage Users</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>User ID</th>
+              <th>Name</th>
+              <th>Role</th>
+              <th>Status</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Sample Data; Dynamically Render This with JavaScript -->
+            <tr>
+              <td>101</td>
+              <td>Alice Johnson</td>
+              <td>Editor</td>
+              <td>Active</td>
+              <td><button>Edit</button></td>
+            </tr>
+            <tr>
+              <td>102</td>
+              <td>Bob Smith</td>
+              <td>Viewer</td>
+              <td>Pending</td>
+              <td><button>Edit</button></td>
+            </tr>
+            <tr>
+              <td>103</td>
+              <td>Charlie Brown</td>
+              <td>Admin</td>
+              <td>Inactive</td>
+              <td><button>Edit</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="reports" class="section">
+        <h2>Reports</h2>
+        <p>View generated reports on user activities and issues.</p>
+      </section>
+
+      <section id="settings" class="section">
+        <h2>Settings</h2>
+        <p>Configure your sub-admin panel settings here.</p>
+      </section>
+    </main>
+  </div>
+
+  <script src="js/main.js"></script> <!-- Optional for dynamic functionality -->
+
+  <footer>
+    <p>&copy; 2024 Telecom Services</p>
+  </footer>
+
+</body>
+</html>

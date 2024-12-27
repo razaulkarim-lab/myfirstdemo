@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Retailer Section</title>
+  <link rel="stylesheet" href="retailer.css">
+</head>
+<body>
+    <div class="retailer-section">
+    <header>
+      <h1>Welcome to Telecom Services</h1>
+      <h1>Retailer Overview</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="plans.html">Plans</a>
+        <a href="contact.html">Contact</a>
+        <a href="report.html">Reports</a>
+      </nav>
+      <p>Manage your retailers and view sales data below.</p>
+    </header>
+
+    <!-- Summary Cards -->
+    <section class="summary-cards">
+      <div class="card">
+        <h3>Total Retailers</h3>
+        <p>50</p>
+      </div>
+      <div class="card">
+        <h3>Active Retailers</h3>
+        <p>45</p>
+      </div>
+      <div class="card">
+        <h3>Monthly Sales</h3>
+        <p>$120,000</p>
+      </div>
+    </section>
+
+    <!-- Retailer List Table -->
+    <section class="retailer-table-section">
+      <h2>Retailer List</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Retailer ID</th>
+            <th>Name</th>
+            <th>Location</th>
+            <th>Status</th>
+            <th>Total Sales</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Sample Data; Later You Can Populate This Dynamically -->
+          <tr>
+            <td>R001</td>
+            <td>Retailer One</td>
+            <td>New York</td>
+            <td>Active</td>
+            <td>$15,000</td>
+            <td><button class="action-btn">View</button></td>
+          </tr>
+          <tr>
+            <td>R002</td>
+            <td>Retailer Two</td>
+            <td>California</td>
+            <td>Inactive</td>
+            <td>$10,000</td>
+            <td><button class="action-btn">View</button></td>
+          </tr>
+          <tr>
+            <td>R003</td>
+            <td>Retailer Three</td>
+            <td>Texas</td>
+            <td>Active</td>
+            <td>$20,000</td>
+            <td><button class="action-btn">View</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </div>
+</body>
+</html>

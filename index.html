@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Telecom Services</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="slider.css">
+  
+</head>
+<body>
+  <header>
+    <h1>Welcome to Telecom Services</h1>
+    <nav>
+        <a href="signup.html">Registration Now</a>
+        <a href="login.html">Login Now</a>
+      <a href="index.html">Home</a>
+      <a href="admin-panel.html"><a href="admin login.html">admin-panel</a></a>
+      <a href="sub-admin-panal.html"><a href="sub admin login.html">sub-admin-panel</a></a>
+      <a href="retailer.html"><a href="retailar login.html">Retailar panal</a></a>
+      <a href="plans.html">Plans</a>
+      <a href="contact.html">Contact</a>
+      <a href="Logout.html">Logout </a>
+    </nav>
+  </header>
+  
+  <section id="intro">
+    <h2>Affordable and Reliable Telecom Solutions</h2>
+    <p>We provide the best telecom services with a range of plans to suit everyone’s needs.</p>
+  </section>
+
+
+   <!-- Slider Section-->
+   <section class="slider">
+    <div class="slides">
+        <div class="slide active">
+            <img src="images/salglase.jpg" alt="Fast Network">
+            <div class="slide-content">
+                <h2>Fast & Reliable Network</h2>
+                <p>Experience high-speed internet and reliable network connectivity.</p>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="images/images (1).jpg" alt="">
+            <div class="slide-content">
+                <h2>24/7 Customer Support</h2>
+                <p>We are here to assist you at any time, any day.</p>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="images/images.jpg" alt="">
+            <div class="slide-content">
+                <h2>Affordable Plans</h2>
+                <p>Choose from a variety of affordable plans that suit your needs.</p>
+            </div>
+        </div>
+    </div>
+     <!-- Slider Controls  -->
+    <div class="controls">
+        <span class="prev">&#10094;</span>
+        <span class="next">&#10095;</span>
+    </div>
+</section>  
+
+
+
+
+
+<script src="script.js"></script>
+
+
+  
+
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Card</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+   <body>
+ <script>
+    // JavaScript for handling form submission and showing feedback
+    document.getElementById('signupForm').addEventListener('submit', async function(event) {
+        event.preventDefault();
+
+        const username = document.getElementById('username').value;
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('password').value;
+
+        try {
+            const response = await fetch('/api/signup', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ username, email, password })
+            });
+
+            const result = await response.text();
+            
+            if (response.ok) {
+                document.getElementById('message').innerText = "Signup successful! Please log in.";
+                // Optionally redirect to the login page
+                setTimeout(() => window.location.href = '/login', 2000);
+            } else {
+                document.getElementById('message').innerText = result; // Show error message
+            }
+        } catch (error) {
+            console.error('Error:', error);
+            document.getElementById('message').innerText = "An error occurred. Please try again.";
+        }
+    });
+</script>  -->
+
+
+  
+  <footer>
+    <p>&copy; 2024 Telecom Services</p>
+  </footer>
+</body>
+</html>

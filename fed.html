@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="fed.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body><header>
+    <h1>Welcome to Telecom Services</h1>
+    <nav>
+      <a href="login.html">Login Now</a>
+      <a href="index.html">Home</a>
+      <a href="plans.html">Plans</a>
+      <a href="contact.html">Contact</a>
+      <a href="Logout.html">Logout </a>
+    </nav>
+  </header>
+  
+  <section id="intro">
+    <h2>Affordable and Reliable Telecom Solutions</h2>
+    <p>We provide the best telecom services with a range of plans to suit everyone’s needs.</p>
+  </section>
+
+
+    <!-- Feedback Form Section -->
+    <section class="feedback-section">
+        <h2>We Value Your Feedback!</h2>
+        <form id="feedbackForm" action="/submit-feedback" method="POST">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required placeholder="Your Name">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="Your Email">
+
+            <label for="feedback">Your Feedback</label>
+            <textarea id="feedback" name="feedback" required placeholder="Write your feedback here..."></textarea>
+
+            <label for="rating">Rating</label>
+            <select id="rating" name="rating" required>
+                <option value="5">Excellent</option>
+                <option value="4">Very Good</option>
+                <option value="3">Good</option>
+                <option value="2">Fair</option>
+                <option value="1">Poor</option>
+            </select>
+
+            <button type="submit">Submit Feedback</button>
+        </form>
+
+        <div id="thankYouMessage" style="display:none;">
+            <h3>Thank you for your feedback!</h3>
+            <p>We appreciate your input and will use it to improve our services.</p>
+        </div>
+    </section>
+
+     <!-- Feedback Received Section -->
+     <section class="received-feedback">
+        <h2>Feedback Received</h2>
+        <div id="feedbackList">
+            <!-- Feedback items will appear here -->
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+
+    <footer>
+        <p>&copy; 2024 Telecom Services</p>
+      </footer>
+</body>
+</html>

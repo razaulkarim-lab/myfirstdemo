@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Page</title>
+    <link rel="stylesheet" href="report.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="report-page">
+        <header>
+            <h1>Welcome to Telecom Services</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="admin-panel.html">admin-panel</a>
+                <a href="sub-admin-panal.html">sub-admin-panel</a>
+                <a href="plans.html">Plans</a>
+               
+                <a href="contact.html">Contact</a>
+              </nav>
+            <h1>Sales Report</h1>
+            <p>Overview of sales data for the current period.</p>
+        </header>
+
+        <section class="filters">
+            <label for="start-date">Start Date:</label>
+            <input type="date" id="start-date">
+            <label for="end-date">End Date:</label>
+            <input type="date" id="end-date">
+            <button id="filter-btn">Generate Report</button>
+        </section>
+
+        <section class="report-content">
+            <h2>Report Summary</h2>
+            <div class="summary">
+                <div class="summary-item">
+                    <h3>Total Sales</h3>
+                    <p id="total-sales">$0.00</p>
+                </div>
+                <div class="summary-item">
+                    <h3>Total Transactions</h3>
+                    <p id="total-transactions">0</p>
+                </div>
+                <div class="summary-item">
+                    <h3>Average Sale Value</h3>
+                    <p id="average-sale-value">$0.00</p>
+                </div>
+            </div>
+
+            <h2>Detailed Sales Data</h2>
+            <table id="sales-table">
+                <thead>
+                    <tr>
+                        <th>Transaction ID</th>
+                        <th>Date</th>
+                        <th>Amount</th>
+                        <th>Retailer</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Dynamic rows will be inserted here -->
+                </tbody>
+            </table>
+        </section>
+    </div>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
